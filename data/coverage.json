@@ -1,6 +1,31 @@
 {
-  "mcp_name": "Denmark Farm Safety MCP",
+  "mcp_name": "Danish Farm Safety MCP",
   "jurisdiction": "DK",
   "build_date": "2026-04-05",
-  "status": "template — data not yet populated"
+  "status": "populated",
+  "record_counts": {
+    "safety_guidance": 14,
+    "children_rules": 10,
+    "reporting_requirements": 5,
+    "coshh_guidance": 5,
+    "risk_assessment_templates": 7,
+    "fts_index_entries": 48
+  },
+  "data_sources": [
+    "Arbejdstilsynet (at.dk)",
+    "BFA Groent (branchevejledninger)",
+    "Videncenter for Arbejdsmiljoe"
+  ],
+  "key_regulations": [
+    "Arbejdsmiljoeloven",
+    "Bekendtgoerelse om unges arbejde",
+    "Bekendtgoerelse om anmeldelse af arbejdsulykker",
+    "Bekendtgoerelse om bekaempelsesmidler",
+    "AT-vejledning A.1.2 (Stoffer og materialer)",
+    "AT-vejledning B.1.3 (Maskiner og maskinanlaeg)",
+    "AT-vejledning D.2.20 (Indretning af stalde)",
+    "AT-vejledning D.5.5 (Siloer)",
+    "Maskindirektivet 2006/42/EF"
+  ],
+  "disclaimer": "Data er vejledende. Kontakt Arbejdstilsynet for aktuelle regler og vejledninger."
 }
