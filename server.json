@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Ansvar-Systems/uk-farm-safety",
+  "description": "UK farm health and safety \u2014 HSE guidance, machinery, COSHH, children on farms",
+  "repository": {
+    "url": "https://github.com/Ansvar-Systems/uk-farm-safety-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ansvar.eu/uk-farm-safety/mcp"
+    }
+  ]
+}
