@@ -4,12 +4,12 @@
   "build_date": "2026-04-05",
   "status": "populated",
   "record_counts": {
-    "safety_guidance": 14,
+    "safety_guidance": 35,
     "children_rules": 10,
     "reporting_requirements": 5,
     "coshh_guidance": 5,
     "risk_assessment_templates": 7,
-    "fts_index_entries": 48
+    "fts_index_entries": 69
   },
   "data_sources": [
     "Arbejdstilsynet (at.dk)",

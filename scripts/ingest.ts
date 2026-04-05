@@ -159,6 +159,258 @@ const safetyGuidance: Array<{
     regulation_ref: 'AT-vejledning D.2.20 (Indretning af stalde)',
   },
 
+  // -- Gylleomroering --
+  {
+    topic: 'Gylleomroering — doedsfald forekommer',
+    machine_type: 'Gylleomroerer',
+    species: null,
+    hazards: 'H2S (svovlbrinte) og NH3 frigives ved omroering. H2S er tungere end luft og samles i lavtliggende omraader. Doedsfald blandt landmaend og redningspersonale forekommer aarligt.',
+    control_measures: 'Opsaet gylleomroerer saa den kan betjenes udendoers. Ventilation af stald mindst 30 minutter foer omroering. Gasmaske med kombifilter (ABEK-P3) tilgaengelig. Aldrig arbejd alene — vagtperson med alarmudstyr. Evakuer stald for dyr og mennesker under omroering.',
+    legal_requirements: 'Risikovurdering paabudt. Alenearbejde ved gylleomroering er forbudt ifoelge Arbejdstilsynets vejledning. Redningsudstyr skal vaere tilgaengeligt paa stedet.',
+    ppe_required: 'Gasmaske med ABEK-P3 filter, sikkerhedssele med line, redningsudstyr tilgaengeligt',
+    regulation_ref: 'AT-vejledning A.1.2, Graensevaerdibekendtgoerelsen, BFA Groent vejledning om gyllehaandtering',
+  },
+
+  // -- Stoej --
+  {
+    topic: 'Stoej — graensevaerdi 85 dB(A)',
+    machine_type: null,
+    species: null,
+    hazards: 'Permanent hoereskade ved langvarig eksponering over 85 dB(A). Korntoerringsanlaeag, motorsave, malere, traktorer uden kabine, svinestalde og foderblandere overskrider typisk graensevaerdien.',
+    control_measures: 'Stoejmaaling ved risikofyldte opgaver. Vedligehold maskiner for at reducere stoej. Lyddaempede kabiner paa traktorer. Hoerevaern stilles til raadighed ved 80 dB(A), obligatorisk ved 85 dB(A). Rotationsskemaer for at begranese eksponeringstid.',
+    legal_requirements: 'Graensevaerdi 85 dB(A) over 8 timer (daglig eksponering). Arbejdsgiver skal stille hoerevaern til raadighed ved 80 dB(A). Obligatorisk brug ved 85 dB(A). Spidsvaerdi 137 dB(C) maa aldrig overskrides.',
+    ppe_required: 'Hoerevaern (oerepropper eller kapselhoerevaern) — SNR-vaerdi tilpasset stoejkilden',
+    regulation_ref: 'Bekendtgoerelse om stoej paa arbejdspladsen, AT-vejledning D.6.1',
+  },
+
+  // -- Vibrationer --
+  {
+    topic: 'Vibrationer — haand-arm og helkrop',
+    machine_type: 'Traktor, motorsav, vinkelsliber',
+    species: null,
+    hazards: 'Haand-arm-vibrationer: hvide fingre (Raynaud), karpaltunnelsyndrom, nerveskader. Helkropsvibrationer: laenderygsmerter, diskusprolaps, traethedsbelastning. Traktorkoeorsel paa ujaevnt terreen er primaer kilde til helkropsvibrationer.',
+    control_measures: 'Haand-arm: vibrationsdaempede vaerktoej, begrans eksponeringstid, hold haender varme. Helkrop: traktorsaeder med affjedring, jaevne koereflader, nedsaet hastighed paa ujaevnt terreen. Roteer opgaver for at reducere daglig eksponering.',
+    legal_requirements: 'Haand-arm graensevaerdi: 5 m/s² (8-timers), aktionsvaerdi 2,5 m/s². Helkrop graensevaerdi: 1,15 m/s² (8-timers), aktionsvaerdi 0,5 m/s². Risikovurdering paabudt naar aktionsvaerdier overskrides.',
+    ppe_required: 'Vibrationsdaempende handsker (begraaenset effekt), affjedret traktorsaeade',
+    regulation_ref: 'Bekendtgoerelse om vibrationer, AT-vejledning D.6.2',
+  },
+
+  // -- Solskade og varme --
+  {
+    topic: 'Solskade og varme — udendoers arbejde',
+    machine_type: null,
+    species: null,
+    hazards: 'Hedesllag, hedeudmattelse, dehydrering, solstik, hudkraeft ved langvarig UV-eksponering. Markarbejde i sommermaneder er saerligt risikofuldt.',
+    control_measures: 'Solcreme med minimum SPF 30 paafoeres udsatte hudpartier. Hovedbeklaedning med nakkedaekning. Regelmaessige vandpauser (mindst hvert 30. minut i varme). Pauser i skygge. Plaanlaeg tungt arbejde til morgen/aften. Lette, loese klaeder der daekker huden.',
+    legal_requirements: 'Arbejdsgiver skal vurdere varmebelastning i APV. Vand og skygge skal vaere tilgaengeligt. Vejledning om symptomer paa hedesllag skal kommunikeres.',
+    ppe_required: 'Solcreme SPF 30+, hovedbeklaedning, solbriller med UV-beskyttelse, let langaermet arbejdstoej',
+    regulation_ref: 'AT-vejledning D.2.3 (Klima og temperatur), Arbejdsmiljoeloven',
+  },
+
+  // -- Psykisk arbejdsmiljoe --
+  {
+    topic: 'Psykisk arbejdsmiljoe — stress, isolation, gaeldsproblemer',
+    machine_type: null,
+    species: null,
+    hazards: 'Stress og udbraendthed fra saesonpres (hoest, saaetid), oekonomisk pres og gaeldsproblemer, social isolation ved alenearbejde, lange arbejdstider, manglende ferie, doedsulykker i branchen paavirker kolleger.',
+    control_measures: 'Landbrugets Psykiske Foerstehjaelp (telefonraadgivning via DLBR). Netvaerksgrupper med andre landmaend. Regelmaessige pauser og friperioder. Tydelig skelnen mellem arbejde og fritid. Professionel hjaelp ved tegn paa depression eller misbrug. Inddrag medarbejdere i planlaeagning.',
+    legal_requirements: 'Psykisk arbejdsmiljoe skal indgaa i APV. Arbejdsgiver har pligt til at forebygge psykisk belastning. Arbejdstilsynet kan udstede paabud om psykisk arbejdsmiljoe.',
+    ppe_required: 'Ikke relevant — organisatoriske foranstaltninger',
+    regulation_ref: 'Arbejdsmiljoeloven kap. 4, AT-vejledning D.4 (Psykisk arbejdsmiljoe), BFA Groent',
+  },
+
+  // -- Elfarer --
+  {
+    topic: 'Elfarer — landbrugsmaskiner naaer luftledninger',
+    machine_type: 'Traktor med laeasser, mejetaersker, kornblaeaser',
+    species: null,
+    hazards: 'Elektrokution ved kontakt med luftledninger (10-60 kV). Jordstraem ved kortslutning. Lysbueskader. Hoeje maskiner (kornblaasere, laaeassere, tipvogne) naar let luftledninger. Ogsaa risiko ved flytbare vandingsanlaeag naaer elledninger.',
+    control_measures: 'Hold mindst 5 meters afstand til luftledninger. Kontakt netselskabet foer arbejde naaer ledninger. Brug markering/flagning af ledninger. Ved uheld: bliv i maskinen og ring 112. Jordforbindelse af generatorer og svejseudstyr. Fejlstroemsafbryder (HPFI/RCD) paa alle installationer.',
+    legal_requirements: 'Staerkstroemsbekendtgoerelsen fastsaetter afstandskrav. Sikkerhedsafstand afhaaenger af spaendingsniveau. Elektriske installationer i landbrug skal godkendes af autoriseret elektriker.',
+    ppe_required: 'Isolerende handsker og stoevler ved elektrisk arbejde, aldrig beroer maskine og jord samtidig ved uheld',
+    regulation_ref: 'Staerkstroemsbekendtgoerelsen, AT-vejledning B.4.1 (Elektriske installationer)',
+  },
+
+  // -- Broende og tanke --
+  {
+    topic: 'Broende og tanke — lukket rum, iltmangel, H2S',
+    machine_type: null,
+    species: null,
+    hazards: 'Iltmangel (under 19,5% O2 er farligt, under 16% er livstruende). H2S-ophobning i gylletanke og septiktanke. CO2-ophobning i silohuse og gaertanke. Drukning ved fald i vaeskefyldte tanke. Redningspersonale udgoeor en stor del af ofrene (kaskadeulykker).',
+    control_measures: 'Gasmaaling foer adgang (O2, H2S, CH4, CO). Aldrig gaa ned i lukket rum uden vagtperson og kommunikationsudstyr. Brug uafhaengigt aandedraetsvaern (ikke filtermaske). Sikkerhedssele med line til redning udefra. Ventiler rummet mekanisk mindst 30 minutter foer adgang. Noedberedskabsplan med oevede procedurer.',
+    legal_requirements: 'Risikovurdering obligatorisk for alt arbejde i lukkede rum. Adgang uden gasmaaaling er forbudt. Vagtperson med redningsudstyr paabudt. Arbejdstilsynets vejledning D.5 stiller specifikke krav.',
+    ppe_required: 'Uafhaengigt aandedraetsvaern (trykluft), sikkerhedssele med line, personlig gasdetektor, kommunikationsudstyr',
+    regulation_ref: 'AT-vejledning D.5 (Lukkede rum), AT-vejledning A.1.2, Graensevaerdibekendtgoerelsen',
+  },
+
+  // -- Staldstoeov --
+  {
+    topic: 'Staldstoeov — organisk stoev, endotoxiner, ODTS',
+    machine_type: null,
+    species: 'Kvaeg, svin, fjaerkrae',
+    hazards: 'Organisk stoev fra foder, stroeelse, dyrehaar og hudceller. Endotoxiner fra gramnegative bakterier (saerligt i svinestalde). ODTS (Organic Dust Toxic Syndrome): influenzalignende symptomer 4-8 timer efter massiv stoeveksponering. Kronisk bronkitis og astma ved langvarig eksponering. Fjaerkraestalde har hoejeste stoevniveauer.',
+    control_measures: 'Mekanisk ventilation dimensioneret korrekt. Befugtning af foder for at reducere stoev. Lukkede fodersystemer. Regelmaessig rengoeiring af staldoverflader. Begrans opholdstid i stoevfyldte omraader. Vaernemidler altid ved udmugning, stroening og foderhaandtering.',
+    legal_requirements: 'Graensevaerdi for organisk stoev: 3 mg/m³ (8-timers). Endotoxin-graensevaerdi: 10 EU/m³ (anbefalet). Risikovurdering paabudt. Ventilationskrav i AT-vejledning D.2.20.',
+    ppe_required: 'Stoevmaske FFP2 (minimum) eller FFP3 ved hoej eksponering, beskyttelsesbriller, overtraeksdragt',
+    regulation_ref: 'Graensevaerdibekendtgoerelsen, AT-vejledning A.1.2, AT-vejledning D.2.20',
+  },
+
+  // -- PPE: Sikkerhedssko S3 --
+  {
+    topic: 'PPE — Sikkerhedssko S3',
+    machine_type: null,
+    species: null,
+    hazards: 'Klemning af foedder, taeer knust af tunge genstande, perforering af saal, udskridning paa vaade overflader',
+    control_measures: 'Sikkerhedssko S3 (staaltaa, gennemstiksikker saal, vandtaet) obligatorisk ved alt maskinarbejde, lagerarbejde og staldarbejde. Udskiftes ved synligt slid eller beskadigelse.',
+    legal_requirements: 'Arbejdsgiver skal stille sikkerhedssko til raadighed og baere omkostningen. Risikovurderingen (APV) bestemmer beskyttelsesklasse.',
+    ppe_required: 'Sikkerhedssko S3 (EN ISO 20345)',
+    regulation_ref: 'Bekendtgoerelse om brug af personlige vaernemidler, AT-vejledning D.5.8',
+  },
+
+  // -- PPE: Hoerevaern --
+  {
+    topic: 'PPE — Hoerevaern',
+    machine_type: null,
+    species: null,
+    hazards: 'Permanent hoereskade, tinnitus ved langvarig stoejeksponering',
+    control_measures: 'Ved over 80 dB(A): hoerevaern stilles til raadighed. Ved over 85 dB(A): brug er obligatorisk. Vaelg hoerevaern med passende SNR-vaerdi til stoejkilden. Oerepropper ved laengerevarende brug, kapselhoerevaern ved kortvarigt arbejde.',
+    legal_requirements: 'Arbejdsgiver skal stille hoerevaern til raadighed ved 80 dB(A). Obligatorisk brug ved 85 dB(A). Audiometri (hoereproeve) anbefales for stoejeksponerede medarbejdere.',
+    ppe_required: 'Hoerevaern (oerepropper SNR 25-35 dB eller kapselhoerevaern)',
+    regulation_ref: 'Bekendtgoerelse om stoej paa arbejdspladsen, AT-vejledning D.6.1',
+  },
+
+  // -- PPE: Aandedraetsvaern --
+  {
+    topic: 'PPE — Aandedraetsvaern',
+    machine_type: null,
+    species: null,
+    hazards: 'Indaanding af stoev, kemikaliedampe, gasser (NH3, H2S, NO2), aerosoler ved sproejtearbejde',
+    control_measures: 'P2-filter (FFP2) til organisk stoev og biologiske partikler. A-filter til organiske oploesningsmiddeldampe. Kombifilter (A2B2E2K2-P3) ved sproejtearbejde med bekaempelsesmidler. Uafhaengigt aandedraetsvaern (trykluft) ved arbejde i lukkede rum. Filtervaern maa aldrig bruges i iltfattig atmosfaere.',
+    legal_requirements: 'Arbejdsgiver vaelger type baseret paa risiko og MAL-faktor. Filtre udskiftes efter producentens anvisning. Tilpasningstest (fit test) anbefales. Uddannelse i korrekt brug og vedligehold paabudt.',
+    ppe_required: 'P2-filter (stoev), A-filter (kemikalier), kombifilter A2B2E2K2-P3 (sproejtearbejde)',
+    regulation_ref: 'Bekendtgoerelse om brug af personlige vaernemidler, AT-vejledning A.1.2',
+  },
+
+  // -- PPE: Handsker --
+  {
+    topic: 'PPE — Handsker',
+    machine_type: null,
+    species: null,
+    hazards: 'Kemisk eksponering ved sproejtearbejde, mekanisk skade ved maskinvedligehold, biologisk kontakt ved dyrehaandtering',
+    control_measures: 'Kemikalieresistente handsker (EN 374) ved sproejtearbejde — vaelg materiale efter kemikalietype (nitril til de fleste bekaempelsesmidler). Arbejdshandsker ved maskinvedligehold og haandtering af skarpe dele. Engangshandsker ved dyrebehandling og saarbehandling. Kontroller altid gennemtraengstid paa sikkerhedsdatabladet.',
+    legal_requirements: 'Arbejdsgiver baerer omkostning og skal sikre korrekt type er tilgaengelig. Handsker skal vaere CE-maerkede. Kemikalieresistente handsker skal opfylde EN 374.',
+    ppe_required: 'Kemikalieresistente (EN 374, nitril) ved sproejtning, laederhandsker ved mekanisk arbejde',
+    regulation_ref: 'Bekendtgoerelse om brug af personlige vaernemidler, AT-vejledning A.1.2',
+  },
+
+  // -- PPE: Sikkerhedshjelm --
+  {
+    topic: 'PPE — Sikkerhedshjelm',
+    machine_type: null,
+    species: null,
+    hazards: 'Hovedskade ved faldende genstande, grene, bygningsdele. Stoed mod faste konstruktioner.',
+    control_measures: 'Sikkerhedshjelm (EN 397) ved skovarbejde, bygningsarbejde, nedrivning og arbejde under haengende last. Ved skovarbejde: kombiner med ansigtsvaern og hoerevaern (skovhjelm EN 397 + EN 1731 + EN 352). Udskift hjelm efter producentens levetid (typisk 5 aar) eller efter slag.',
+    legal_requirements: 'Obligatorisk naar APV viser risiko for hovedskade. Arbejdsgiver stiller til raadighed og baerer omkostning.',
+    ppe_required: 'Sikkerhedshjelm EN 397 (bygning/nedrivning), skovhjelm med ansigtsvaern og hoerevaern ved skovarbejde',
+    regulation_ref: 'Bekendtgoerelse om brug af personlige vaernemidler',
+  },
+
+  // -- PPE: Beskyttelsesbriller --
+  {
+    topic: 'PPE — Beskyttelsesbriller',
+    machine_type: null,
+    species: null,
+    hazards: 'Oejenskader ved svejsning, slibning, kemikaliestaaenk, stoev og flyvende partikler',
+    control_measures: 'Taetsluttende beskyttelsesbriller (EN 166) ved slibning, boremaskinearbejde og kemikaliehaaandtering. Svejsebriller eller svejseskaaerm med korrekt DIN-filternummer ved svejsning. Ansigtsvaern ved risiko for sproeijt af vaesker. Sikkerhedsbriller med sidevaern til generelt vaerkstedsarbejde.',
+    legal_requirements: 'Obligatorisk ved APV-identificeret risiko for oejenskade. Arbejdsgiver stiller til raadighed.',
+    ppe_required: 'Beskyttelsesbriller EN 166 (slibning/kemikalier), svejsebriller med korrekt DIN-filter, ansigtsvaern ved vaeskerisiko',
+    regulation_ref: 'Bekendtgoerelse om brug af personlige vaernemidler',
+  },
+
+  // -- Foerstehjaelp: Foerstehjaelpskasse --
+  {
+    topic: 'Foerstehjaelp — obligatorisk foerstehjaelpskasse',
+    machine_type: null,
+    species: null,
+    hazards: 'Forsinket behandling af skaader, infektioner i saar, forvaerring af skader uden akut pleje',
+    control_measures: 'Foerstehjaelpskasse paa alle arbejdspladser, inklusiv i marken (medbragt paa traktor/koeretoej). Indhold efter Arbejdstilsynets vejledning: forbindinger, plaster, sakse, engangshandsker, oejenskylleflasker, brandsaarvsindsplaster. Regelmaessig kontrol af udloebsdatoer. Mindst een medarbejder uddannet i foerstehjaelp.',
+    legal_requirements: 'Obligatorisk paa alle arbejdspladser ifoelge Arbejdsmiljoeloven. Indhold skal vaere tilpasset arbejdspladsens risici. Placering skal vaere tydeligt skiltet.',
+    ppe_required: 'Foerstehjaelpskasse med indhold ifoelge AT-vejledning',
+    regulation_ref: 'Arbejdsmiljoeloven, AT-vejledning D.5.9 (Foerstehjaelp)',
+  },
+
+  // -- Foerstehjaelp: AED/hjertestarter --
+  {
+    topic: 'Foerstehjaelp — AED (hjertestarter)',
+    machine_type: null,
+    species: null,
+    hazards: 'Hjertestop paa afsides beliggende landbrug med lang responstid for ambulance. Elektrokution, varmeslag og traumer kan udloese hjertestop.',
+    control_measures: 'AED (Automatisk Ekstern Defibrillator) anbefalet paa stoeerre bedrifter. Registrering paa hjertestarter.dk saa 112 kan guide til naermeste enhed. Mindst to medarbejdere uddannet i brug. Opbevar synligt, frostfrit og tilgaengeligt. Maanedlig kontrol af batteristatus og elektroder.',
+    legal_requirements: 'Ikke lovpligtig, men staerkt anbefalet af Hjerteforeningen og BFA Groent. Registrering paa hjertestarter.dk er frivillig men anbefalet.',
+    ppe_required: 'AED-enhed, engangshandsker, lommemaske til kunstigt aandedraet',
+    regulation_ref: 'Hjerteforeningens retningslinjer, BFA Groent anbefaling',
+  },
+
+  // -- Foerstehjaelp: Noedprocedure --
+  {
+    topic: 'Foerstehjaelp — noedprocedure og alarmering',
+    machine_type: null,
+    species: null,
+    hazards: 'Forsinket alarmering paa afsides lokationer, manglende adresseangivelse til redningskoeretoej, sprogbarrierer med udenlandsk arbejdskraft',
+    control_measures: 'Opslag med alarmnummer 112 ved alle telefoner og i stalde/vaerksted. Angiv bedriftens adresse og GPS-koordinater tydeligt. Instruktion til udenlandske medarbejdere paa relevant sprog. Aftalt moedested for ambulance ved tilkoerselsvej. Oev noedprocedurer minimum een gang aarligt.',
+    legal_requirements: 'Arbejdsgiver skal sikre effektive noedprocedurer. Alarmeringsplan skal indgaa i APV. Udenlandsk arbejdskraft skal instrueres paa forstaaeligt sprog.',
+    ppe_required: 'Mobiltelefon, opslag med alarmnummer 112 og bedriftsadresse, foerstehjaelpskasse',
+    regulation_ref: 'Arbejdsmiljoeloven, AT-vejledning D.5.9, Bekendtgoerelse om brug af udenlandsk arbejdskraft',
+  },
+
+  // -- Statistik: Doedsulykker --
+  {
+    topic: 'Statistik — doedsulykker i dansk landbrug',
+    machine_type: null,
+    species: null,
+    hazards: '8-12 doedsulykker aarligt i dansk landbrug. Landbrug har den hoejeste doedelighesfrekvens af alle brancher i Danmark. Traktorvaelt er den hyppigste enkeltaarsag.',
+    control_measures: 'Systematisk sikkerhedskultur. Regelmaessig uddannelse og genopfriskning. APV med fokus paa hoejrisiko-aktiviteter. Investering i sikkerhedsudstyr (ROPS, afskaeramning, ventilation). Inddrag alle medarbejdere i sikkerhedsarbejdet.',
+    legal_requirements: 'Alle doedsulykker skal anmeldes straks til Arbejdstilsynet (70 12 12 88) og politi (114). Ulykkesstedet maa ikke forstyrres.',
+    ppe_required: 'Forebyggelse via sikkerhedsudstyr og procedurer — ikke individuel PPE',
+    regulation_ref: 'Arbejdstilsynets aarsrapporter, Bekendtgoerelse om anmeldelse af arbejdsulykker',
+  },
+
+  // -- Statistik: Alvorlige ulykker --
+  {
+    topic: 'Statistik — alvorlige ulykker (~500/aar)',
+    machine_type: null,
+    species: null,
+    hazards: 'Cirka 500 alvorlige arbejdsulykker anmeldes aarligt til Arbejdstilsynet fra landbrugssektoren. Moeerketal er hoeiere — mange ulykker anmeldes ikke (saerligt blandt selvstaendige landmaend).',
+    control_measures: 'Styrk anmeldekulturen. Registrer ogsaa naerved-ulykker. Brug data til maalrettet forebyggelse. Samarbejd med BFA Groent om branchespecifikke indsatser.',
+    legal_requirements: 'Anmeldepligt for alle ulykker med fravaaer over 1 dag via EASY-systemet inden 9 dage.',
+    ppe_required: 'Forebyggelse — statistik bruges til at prioritere indsats',
+    regulation_ref: 'Arbejdstilsynets ulykkesstatistik, Bekendtgoerelse om anmeldelse af arbejdsulykker',
+  },
+
+  // -- Statistik: Hyppigste aarsager --
+  {
+    topic: 'Statistik — hyppigste ulykkesaarsager',
+    machine_type: null,
+    species: null,
+    hazards: 'Traktorvaelt 25% af doedsulykker. Klemning af dyr 15%. Fald (fra maskiner, stiger, tage) 15%. Maskinulykker (kraftudtag, skaerevaerk) 12%. Resten fordelt paa kemikalier, elulykker, gyllegasser og andre aarsager.',
+    control_measures: 'Prioriter indsats efter statistik: ROPS og seler paa alle traktorer, sikker dyrehaandtering med korrekt inventar, faldsikring ved arbejde i hoejden, afskaeramning paa kraftudtag.',
+    legal_requirements: 'Arbejdstilsynet foretager risikobaseret tilsyn med fokus paa hoejfrekvensulykker.',
+    ppe_required: 'Afhaenger af aktivitet — se specifikke emner',
+    regulation_ref: 'Arbejdstilsynets aarsrapporter, BFA Groent ulykkesanalyser',
+  },
+
+  // -- Statistik: Aldersfordeling --
+  {
+    topic: 'Statistik — aldersfordeling af ulykker',
+    machine_type: null,
+    species: null,
+    hazards: 'Overrepraesentation af aeldre (>55 aar): langsommere reaktion, fysisk svaagere, ofte selvstaendige uden AMO. Overrepraesentation af unge (<25 aar): manglende erfaring, utilstraekkelig oplaeering, risikoadfaerd.',
+    control_measures: 'Aeldre: tilpas arbejdsopgaver, regelmaessige helbredsundersoegelser, ergonomisk tilpasning. Unge: grundig oplaering, mentorordning, aldrig alenearbejde ved farlige opgaver, aldersspecifikke restriktioner (jf. Bekendtgoerelse om unges arbejde).',
+    legal_requirements: 'Saerlige regler for unge under 18 (Bekendtgoerelse om unges arbejde). Ingen aldersspecifik lovgivning for aeldre, men APV skal tage hensyn til individuel kapacitet.',
+    ppe_required: 'Alderstilpasset — aeldre: ergonomiske hjaelpemidler. Unge: skaeerpet opsyn og instrukser',
+    regulation_ref: 'Arbejdstilsynets ulykkesstatistik, Bekendtgoerelse om unges arbejde, Arbejdsmiljoeloven',
+  },
+
   // -- Ergonomi og alenearbejde --
   {
     topic: 'Ergonomi — tunge loeft i landbruget',
