@@ -52,7 +52,7 @@ function initSchema(db: BetterSqlite3.Database): void {
       legal_requirements TEXT,
       ppe_required TEXT,
       regulation_ref TEXT,
-      jurisdiction = 'DK'
+      jurisdiction TEXT DEFAULT 'DK'
     );
 
     CREATE TABLE IF NOT EXISTS children_rules (
@@ -62,7 +62,7 @@ function initSchema(db: BetterSqlite3.Database): void {
       permitted INTEGER NOT NULL,
       conditions TEXT,
       regulation_ref TEXT,
-      jurisdiction = 'DK'
+      jurisdiction TEXT DEFAULT 'DK'
     );
 
     CREATE TABLE IF NOT EXISTS reporting_requirements (
@@ -74,7 +74,7 @@ function initSchema(db: BetterSqlite3.Database): void {
       method TEXT,
       record_retention_years INTEGER,
       regulation_ref TEXT,
-      jurisdiction = 'DK'
+      jurisdiction TEXT DEFAULT 'DK'
     );
 
     CREATE TABLE IF NOT EXISTS coshh_guidance (
@@ -86,7 +86,7 @@ function initSchema(db: BetterSqlite3.Database): void {
       storage_requirements TEXT,
       disposal_requirements TEXT,
       regulation_ref TEXT,
-      jurisdiction = 'DK'
+      jurisdiction TEXT DEFAULT 'DK'
     );
 
     CREATE TABLE IF NOT EXISTS risk_assessment_templates (
@@ -96,7 +96,7 @@ function initSchema(db: BetterSqlite3.Database): void {
       controls TEXT,
       residual_risk TEXT,
       review_frequency TEXT,
-      jurisdiction = 'DK'
+      jurisdiction TEXT DEFAULT 'DK'
     );
 
     CREATE VIRTUAL TABLE IF NOT EXISTS search_index USING fts5(
@@ -110,7 +110,7 @@ function initSchema(db: BetterSqlite3.Database): void {
 
     INSERT OR IGNORE INTO db_metadata (key, value) VALUES ('schema_version', '1.0');
     INSERT OR IGNORE INTO db_metadata (key, value) VALUES ('mcp_name', 'Denmark Farm Safety MCP');
-    INSERT OR IGNORE INTO db_metadata (key, value) VALUES ('jurisdiction = 'DK');
+    INSERT OR IGNORE INTO db_metadata (key, value) VALUES ('jurisdiction', 'DK');
   `);
 }
 
