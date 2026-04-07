@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -46,5 +47,11 @@ export function handleGetCoshhRequirements(db: Database, args: CoshhArgs) {
       regulation_ref: r.regulation_ref,
     })),
     _meta: buildMeta(),
+    _citation: buildCitation(
+      `DK COSHH Requirements`,
+      `Danish COSHH requirements`,
+      'get_coshh_requirements',
+      { ...(args.substance ? { substance: args.substance } : {}) },
+    ),
   };
 }

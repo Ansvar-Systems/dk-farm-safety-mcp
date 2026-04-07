@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -49,5 +50,11 @@ export function handleGetMachinerySafety(db: Database, args: MachineryArgs) {
       regulation_ref: r.regulation_ref,
     })),
     _meta: buildMeta(),
+    _citation: buildCitation(
+      `DK Machinery Safety — ${args.machine_type}`,
+      `Danish machinery safety for ${args.machine_type}`,
+      'get_machinery_safety',
+      { machine_type: args.machine_type },
+    ),
   };
 }
