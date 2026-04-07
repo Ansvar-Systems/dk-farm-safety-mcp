@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -49,5 +50,11 @@ export function handleGetLivestockHandlingSafety(db: Database, args: LivestockAr
       regulation_ref: r.regulation_ref,
     })),
     _meta: buildMeta(),
+    _citation: buildCitation(
+      `DK Livestock Handling Safety — ${args.species}`,
+      `Danish livestock handling safety for ${args.species}`,
+      'get_livestock_handling_safety',
+      { species: args.species },
+    ),
   };
 }

@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -40,5 +41,11 @@ export function handleGetRiskAssessmentTemplate(db: Database, args: RiskAssessme
       review_frequency: r.review_frequency,
     })),
     _meta: buildMeta(),
+    _citation: buildCitation(
+      `DK Risk Assessment — ${args.activity}`,
+      `Danish risk assessment template for ${args.activity}`,
+      'get_risk_assessment_template',
+      { activity: args.activity },
+    ),
   };
 }
