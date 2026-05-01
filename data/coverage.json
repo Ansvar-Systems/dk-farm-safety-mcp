@@ -1,7 +1,7 @@
 {
   "mcp_name": "Danish Farm Safety MCP",
   "jurisdiction": "DK",
-  "build_date": "2026-04-05",
+  "build_date": "2026-05-01",
   "status": "populated",
   "record_counts": {
     "safety_guidance": 35,
